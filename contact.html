@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim | Mehmet Emin Deniz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">Mehmet <span>Emin Deniz</span></a>
+        <nav class="nav" id="main-nav">
+          <a href="index.html">Anasayfa</a>
+          <a href="about.html">Hakkımda</a>
+          <a href="projects.html">Projelerim</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html" class="active">İletişim</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Menüyü Aç/Kapat" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>İletişim</h1>
+          <p>
+            Projeler, iş birlikleri veya soruların için benimle iletişime
+            geçebilirsin.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-column">
+          <div>
+            <h2>Benimle İletişime Geç</h2>
+            <p>
+              Aşağıdaki formu doldurarak bana mesaj gönderebilirsin. Form, harici
+              bir servis (Formspree) üzerinden e-posta olarak iletilecek şekilde
+              ayarlanabilir.
+            </p>
+            <!--
+              Formspree entegrasyonu:
+              1) https://formspree.io adresine gir ve ücretsiz bir form oluştur.
+              2) Sana verilen "Endpoint" (örn: https://formspree.io/f/xyzabcde) adresini al.
+              3) Aşağıdaki action="" içindeki URL'yi kendi endpoint adresinle değiştir.
+            -->
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/YOUR_ENDPOINT_ID"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="Portfolyo Sitesi - Yeni Mesaj" />
+              <div class="form-group">
+                <label for="name">Ad Soyad</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Adını ve soyadını yaz"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">E-posta</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="ornek@mail.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Mesajın</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Mesajını buraya yaz"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn primary">Mesajı Gönder</button>
+              <p class="form-note">
+                Form gönderildiğinde, mesajın Formspree üzerinden belirlediğin
+                e-posta adresine iletilir. Eğer sorun yaşarsan doğrudan şu
+                adresi de kullanabilirsin:
+                <a href="mailto:mehmetemindenizofficial@gmail.com"
+                  >mehmetemindenizofficial@gmail.com</a
+                >.
+              </p>
+            </form>
+          </div>
+
+          <aside class="info-card">
+            <h3>İletişim Bilgileri</h3>
+            <ul>
+              <li>
+                <strong>E-posta:</strong>
+                <a href="mailto:mehmetemindenizofficial@gmail.com"
+                  >mehmetemindenizofficial@gmail.com</a
+                >
+              </li>
+              <li><strong>Şehir:</strong> Gaziantep</li>
+              <li><strong>Durum:</strong> Bilgisayar mühendisliği 2. sınıf öğrencisi</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"></span> Mehmet Emin Deniz. Tüm hakları saklıdır.
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+

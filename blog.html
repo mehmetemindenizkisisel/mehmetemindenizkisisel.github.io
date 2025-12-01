@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Mehmet Emin Deniz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">Mehmet <span>Emin Deniz</span></a>
+        <nav class="nav" id="main-nav">
+          <a href="index.html">Anasayfa</a>
+          <a href="about.html">Hakkımda</a>
+          <a href="projects.html">Projelerim</a>
+          <a href="blog.html" class="active">Blog</a>
+          <a href="contact.html">İletişim</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Menüyü Aç/Kapat" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Blog</h1>
+          <p>
+            Öğrenirken aldığım notları, deneyimlerimi ve yazılım dünyasına dair
+            düşüncelerimi paylaştığım alan.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container blog-layout">
+          <div class="blog-main">
+            <!--
+              YENİ YAZI EKLEME REHBERİ
+              ----------------------------------
+              1) Aşağıdaki <article class="blog-post"> bloğunu kopyala.
+              2) Başlık, tarih ve içeriği kendine göre düzenle.
+              3) Sadece HTML içinde düzenleme yapman yeterli.
+            -->
+
+            <article class="blog-post">
+              <header>
+                <h2>Bilgisayar Mühendisliğine Başlarken</h2>
+                <p class="meta">Tarih: 01.12.2025</p>
+              </header>
+              <p>
+                Bilgisayar mühendisliği bölümüne başlamak, hem heyecan verici
+                hem de zaman zaman zorlayıcı olabiliyor. Temel dersler,
+                algoritmalar ve proje ödevleri arasında denge kurmak önemli.
+              </p>
+              <p>
+                Bu süreçte düzenli çalışmak, not tutmak ve soru sormaktan
+                çekinmemek bence en kritik noktalar. Özellikle ilk yıllarda
+                güçlü bir temel oluşturmak, sonraki yıllarda büyük avantaj
+                sağlıyor.
+              </p>
+            </article>
+
+            <article class="blog-post">
+              <header>
+                <h2>HTML, CSS ve JavaScript ile İlk Adımlar</h2>
+                <p class="meta">Tarih: 01.12.2025</p>
+              </header>
+              <p>
+                Web geliştirmeye başlarken HTML, CSS ve JavaScript üçlüsünü iyi
+                öğrenmek gerekiyor. HTML sayfanın iskeletini, CSS görünümünü,
+                JavaScript ise sayfanın dinamik davranışlarını kontrol ediyor.
+              </p>
+              <p>
+                Basit projelerle başlayıp zamanla daha karmaşık arayüzler
+                geliştirmek, hem motivasyonu artırıyor hem de konuları daha iyi
+                anlamaya yardımcı oluyor.
+              </p>
+            </article>
+
+            <!-- ÖRNEK ŞABLON: Yeni yazı eklemek için kopyalayabilirsin
+            <article class="blog-post">
+              <header>
+                <h2>YAZININ BAŞLIĞI</h2>
+                <p class="meta">Tarih: GG.AA.YYYY</p>
+              </header>
+              <p>
+                İlk paragraf...
+              </p>
+              <p>
+                İkinci paragraf...
+              </p>
+            </article>
+            -->
+          </div>
+
+          <aside class="blog-sidebar">
+            <h3>Blog Hakkında</h3>
+            <p>
+              Burada ağırlıklı olarak bilgisayar mühendisliği öğrencisi olarak
+              yaşadığım deneyimleri, öğrendiğim konuları ve küçük ipuçlarını
+              paylaşıyorum.
+            </p>
+            <h3>Kategoriler</h3>
+            <ul class="list">
+              <li>Üniversite ve Dersler</li>
+              <li>Web Geliştirme</li>
+              <li>Algoritmalar</li>
+              <li>Kişisel Gelişim</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"></span> Mehmet Emin Deniz. Tüm hakları saklıdır.
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
